@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_layout :: head"></head>
+<body>
+    <h2 class="m-30">FPT International Student Exchange Management System</h2>
+    <form action="#">
+        <div class="row">
+            <h3 class="col-md-3 offset-md-4 label-uppercase align-center">Sign in</h3>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-1 offset-md-3 label no-padding mb-15">Email: </div>
+            <div class="col-md-3">
+                <input type="email" class="input border_bottom" required="" autofocus="">
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-1 offset-md-3 label no-padding mb-15">Password: </div>
+            <div class="col-md-3">
+                <input type="password" class="input border_bottom" required="">
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-3 offset-md-4 align-center">
+                <button type="submit" class="button">Sign in</button>
+            </div>
+        </div>
+    </form>
+    
+    <div class="row">
+        <div class="col-md-3 offset-md-4">
+            <div class="horizontal-text"><span>or</span></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 offset-md-4 align-center">
+            <div class="btn btn-danger button-text">
+                <a href="#">
+                    <i class="fab fa-google" aria-hidden="true"></i> 
+                    <span class="ml-8">Sign in with Google</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
