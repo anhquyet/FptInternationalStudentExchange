@@ -60,6 +60,17 @@ create table Requirements (
     FOREIGN KEY (EventId) REFERENCES Events(Id)
 );
 
+create table PersonalRequirement (
+  EventId int not null,
+  UserId int not null,
+  RequirementId int not null,
+  Verified bit,
+  primary key (EventId, UserId, RequirementId),
+  foreign key (EventId) references Events(Id),
+  foreign key (UserId) references Users(Id),
+  foreign key (RequirementId) references Requirements(Id)
+);
+
 create table Events_Majors (
     EventId int not null,
     MajorId int not null,
