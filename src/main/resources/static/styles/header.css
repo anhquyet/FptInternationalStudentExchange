@@ -1,0 +1,17 @@
+.ise-img{
+    width: 170px;
+    height: 100px;
+}
+
+.search{
+    width:200px;
+    height: 30px;
+    border-radius: 20px;
+    boder: solid;
+    color: #63717f;
+}
+
+.search_icon{
+    width: 35px;
+    height: 35px;
+}
